@@ -142,7 +142,7 @@
 
   /* Glass effect */
   .glass-effect {
-    @apply bg-white/90 backdrop-blur-md;
+    @apply bg-white/85 backdrop-blur-md;
   }
 
   /* Gradient text */
