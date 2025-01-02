@@ -21,12 +21,10 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className={` fixed w-full z-50 transition-all duration-300 glass-effect bg-white/90 
-            }`}>
+        <header className="fixed w-full z-50 transition-all duration-300 bg-white">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="#" className="gradient-text text-xl font-bold">
-
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -57,11 +55,9 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            <div className={`lg:hidden fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                }`} onClick={() => setMobileMenuOpen(false)} />
+            <div className={`lg:hidden fixed inset-0 z-40 bg-transparent transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setMobileMenuOpen(false)} />
 
-            <div className={`lg:hidden fixed right-0 top-0 z-50 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                }`}>
+            <div className={`lg:hidden fixed right-0 top-0 z-50 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="p-4 border-b">
                     <div className="flex items-center justify-between">
                         <span className="gradient-text text-lg font-semibold">Menu</span>

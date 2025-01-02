@@ -20,7 +20,7 @@ export default function About() {
                         <div className="space-y-4 animate-slide-in-right">
                             <h3 className="text-xl font-semibold text-indigo-600">My Journey</h3>
                             <p className=" text-gray-600">
-                                Memiliki pemahaman yang tentang IT seperti pengembangan web, jaringan komputer, cloud computing, aplikasi perkantoran, dan teknologi blockchain. Dengan dasar yang kuat dalam teknologi yang terus berkembang dengan komitmen untuk terus belajar dan mendorong inovasi, termasuk melalui partisipasi dalam program Kampus Merdeka.
+                                Memiliki pemahaman IT seperti pengembangan web, jaringan komputer, cloud computing, aplikasi perkantoran, dan teknologi blockchain. Dengan dasar yang kuat dalam teknologi yang terus berkembang dengan komitmen untuk terus belajar dan mendorong inovasi, termasuk melalui partisipasi dalam program Kampus Merdeka.
                             </p>
                         </div>
                     </div>
