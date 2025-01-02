@@ -90,13 +90,27 @@ export default function Hero() {
             </div>
 
             {/* Scroll indicator */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#about" className="group text-sm font-semibold text-white transition-all duration-300 hover:text-indigo-400">
-                    <svg className="h-14 w-14" fill="none" stroke="currentColor" viewBox="0 0 36 36">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            <div className="absolute bottom-5 left-1/2-1 transform -translate-x-1/2 text-center animate-bounce">
+                <a
+                    href="#about"
+                    className="group text-sm font-semibold text-white transition-all duration-300 hover:text-indigo-400"
+                >
+                    <svg
+                        className="h-14 w-14 mx-auto"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 36 36"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                        />
                     </svg>
                 </a>
             </div>
+
         </div >
     );
 }
