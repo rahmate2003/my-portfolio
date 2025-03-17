@@ -11,6 +11,18 @@ const experiences = [
 
         ]
     },
+    {
+         company: "Kantor Kesyahbandaran dan Otoritas Pelabuhan Samarinda",
+  position: "Magang IT Support dan Akuntansi",
+  duration: "Juni 2019 - Desember 2019",
+
+        description: [
+    "Memberikan dukungan teknis untuk infrastruktur IT kantor, termasuk menangani masalah perangkat keras dan perangkat lunak agar operasional harian berjalan lancar.",
+    "Membantu memelihara dan memperbarui sistem komputer dan jaringan.",
+    "Melakukan entri data pemasukan dan pengeluaran Pajak dan Administrasi Kapal.",
+    "Mencetak Kwitansi dan penyusunan laporan keuangan bulanan."
+        ]
+    },
     // Add more experiences...
 ]
 
