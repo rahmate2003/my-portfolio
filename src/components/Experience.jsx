@@ -13,7 +13,7 @@ const experiences = [
     },
     {
          company: "Kantor Kesyahbandaran dan Otoritas Pelabuhan Samarinda",
-  position: "Magang IT Support dan Akuntansi",
+  position: "IT Support dan Akuntansi Internship",
   duration: "Juni 2019 - Desember 2019",
 
         description: [
