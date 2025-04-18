@@ -1,5 +1,15 @@
 // src/components/Experience.jsx
 const experiences = [
+        {
+        company: "PT. Media Kreasi Abadi",
+        position: "Backend Developer",
+        duration: "Mar 2025 - May 2025",
+        description: [
+            "Membangun REST API untuk platform POS, SCM dan CRM",
+            "Mengonfigurasi dan mengelola infrastruktur cloud, termasuk pengaturan server virtual, penyimpanan data, dan pengelolaan jaringan.",
+
+        ]
+    },
     {
         company: "MSIB Kampus Merdeka - Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
         position: "Cloud Computing",

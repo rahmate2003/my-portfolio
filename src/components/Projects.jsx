@@ -1,6 +1,15 @@
 
 // src/components/Projects.jsx
 const projects = [
+      {
+        title: "NukaPOS (Nusantara Kasir POS, SCM & CRM)",
+        type: "REST API",
+        duration: "Maret 2025 - May 2025",
+        description: "Platform tersebut digunakan untuk mengelola tenant, produk, penjualan, pembelian untuk pelaku bisnis UMKM pada Masyarakat Balikpapan. Yang berfungsi sebagai Kasir, POS, SCM dan CRM",
+        technologies: ["SQL", "TypeScript", "Prisma ORM", "Node.JS","Nginx","Cloud"],
+        link: "https://github.com/rahmate2003/",
+        image: "/project-image.jpgs"
+    },
     {
         title: "Implementasi Smart Contract berbasis Teknologi Blockchain untuk Pemilihan Elektronik Presiden dan Wakil Presiden BEM Polnes",
         type: "Skripsi",
