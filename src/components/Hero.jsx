@@ -36,8 +36,7 @@ export default function Hero() {
                     </h1>
                     <div className="h-1 w-20 bg-indigo-500 mx-auto mb-6"></div>
                     <p className="text-lg md:text-xl text-gray-200 mb-8">
-                        <span className="typing-text">Frontend Developer</span> |
-                        <span className="typing-text delay-300"> Backend Developer</span> |
+                        <span className="typing-text delay-100"> Backend Developer</span> |
                         <span className="typing-text delay-600"> Cloud Engineer</span> |
                         <span className="typing-text delay-900"> Network Engineer</span>
                     </p>
