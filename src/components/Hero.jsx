@@ -72,7 +72,7 @@ export default function Hero() {
 
                     {/* Buttons with enhanced styling */}
                     <div className="flex items-center justify-center gap-x-6 animate-fade-in-up">
-                        <a href="https://drive.google.com/file/d/11Z-Z-KlgdL4_xPI_MmMeVW2SWclzPzb4/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                        <a href="https://drive.google.com/file/d/1kTE0AkhExded6XpbMCXTXiooOO6Oitng/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                             download  // Menambahkan atribut download
                             className="animate-slide-in-left animated-button bg-indigo-600 px-6 py-3 rounded-full text-sm font-semibold text-white shadow-lg hover:shadow-indigo-500/50 transition-all duration-300"
                         >
