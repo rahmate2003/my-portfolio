@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 export default function Hero() {
     return (
         <div className="relative min-h-screen flex items-center justify-center">
@@ -36,8 +35,8 @@ export default function Hero() {
                     </h1>
                     <div className="h-1 w-20 bg-indigo-500 mx-auto mb-6"></div>
                     <p className="text-lg md:text-xl text-gray-200 mb-8">
-                        <span className="typing-text delay-100"> Backend Developer</span> |
-                        <span className="typing-text delay-600"> Cloud Engineer</span> |
+                        <span className="typing-text delay-100">Backend Developer</span> | 
+                        <span className="typing-text delay-600"> Cloud Engineer</span> | 
                         <span className="typing-text delay-900"> Network Engineer</span>
                     </p>
                     <div className="mt-4 flex justify-center space-x-6 mb-8">
@@ -53,7 +52,6 @@ export default function Hero() {
                                 <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
                             </svg>
                         </a>
-
                         <a
                             href="https://instagram.com/matterizz_"
                             target="_blank"
@@ -65,9 +63,7 @@ export default function Hero() {
                                 <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5a4.25 4.25 0 014.25 4.25v8.5a4.25 4.25 0 01-4.25 4.25h-8.5a4.25 4.25 0 01-4.25-4.25v-8.5a4.25 4.25 0 014.25-4.25zm4.25 3.75a4 4 0 100 8 4 4 0 000-8zm0 1.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm5.25-.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0z" />
                             </svg>
                         </a>
-
                     </div>
-
 
                     {/* Buttons with enhanced styling */}
                     <div className="flex items-center justify-center gap-x-6 animate-fade-in-up">
@@ -109,7 +105,6 @@ export default function Hero() {
                     </svg>
                 </a>
             </div>
-
-        </div >
+        </div>
     );
 }

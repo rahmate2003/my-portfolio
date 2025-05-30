@@ -2,7 +2,7 @@ const education = [
     {
         company: "Politeknik Negeri Samarinda",
         position: "D4/S1 Teknik Informatika Multimedia",
-        duration: "2021 - Present",
+        duration: "2021 - 2025",
         gpa: "IPK : 3.91 / 4.0",  // Menambahkan informasi IPK
         description: [
             "Politeknik Negeri Samarinda (Polnes) adalah perguruan tinggi vokasi yang terletak di Samarinda, Kalimantan Timur, Indonesia. Polnes berfokus pada pengembangan pendidikan yang mengarah pada keterampilan praktis dan siap kerja di berbagai bidang industri Polnes memiliki berbagai program studi yang berfokus pada teknologi dan bisnis, dengan fasilitas yang lengkap dan pengajaran berbasis praktik untuk mempersiapkan mahasiswa menghadapi tantangan di dunia kerja. Sebagai lembaga pendidikan tinggi, Polnes juga aktif dalam riset dan pengembangan serta kerja sama dengan berbagai sektor industri untuk meningkatkan kualitas pendidikan dan pengembangan sumber daya manusia."
