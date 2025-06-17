@@ -35,8 +35,8 @@ export default function Hero() {
                     </h1>
                     <div className="h-1 w-20 bg-indigo-500 mx-auto mb-6"></div>
                     <p className="text-lg md:text-xl text-gray-200 mb-8">
-                        <span className="typing-text delay-100">Backend Developer</span> | 
-                        <span className="typing-text delay-600"> Cloud Engineer</span> | 
+                        <span className="typing-text delay-100">Backend Developer</span> |
+                        <span className="typing-text delay-600"> Cloud Engineer</span> |
                         <span className="typing-text delay-900"> Network Engineer</span>
                     </p>
                     <div className="mt-4 flex justify-center space-x-6 mb-8">
@@ -67,7 +67,7 @@ export default function Hero() {
 
                     {/* Buttons with enhanced styling */}
                     <div className="flex items-center justify-center gap-x-6 animate-fade-in-up">
-                        <a href="https://drive.google.com/file/d/1aC60bOSWOoQ5hSZNt8WrIejbFCAXfneK/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                        <a href="https://drive.google.com/file/d/1zqAGX1iAb69Ikb1HdpokpSf7uE55fR5E/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                             download  // Menambahkan atribut download
                             className="animate-slide-in-left animated-button bg-indigo-600 px-6 py-3 rounded-full text-sm font-semibold text-white shadow-lg hover:shadow-indigo-500/50 transition-all duration-300"
                         >
