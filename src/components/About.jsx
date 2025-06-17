@@ -24,7 +24,6 @@ export default function About() {
                   <li>📧 w.rahmad26@gmail.com</li>
                   <li>🌐 https://rahmatw.my.id</li>
                   <li>🎂 22 Tahun</li>
-                  {/* <li>👤 TB 168cm, BB 52kg</li> */}
                 </ul>
               </div>
 
