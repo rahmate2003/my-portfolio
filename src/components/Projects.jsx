@@ -97,7 +97,7 @@ export default function Projects() {
                     {project.images.map((image, idx) => (
                       <div
                         key={idx}
-                        className={`${project.images.length > 1 ? "w-full sm:w-1/2 lg:w-1/3" : "w-full"
+                        className={`${project.images.length === 1 ? "w-full" : "w-[280px]"
                           }`}
                       >
                         <img
@@ -107,8 +107,8 @@ export default function Projects() {
                         />
                       </div>
                     ))}
-
                   </div>
+
                   <div className="mt-4">
                     <h3 className="text-xl font-semibold text-blue-800">
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
