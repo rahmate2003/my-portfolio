@@ -21,6 +21,23 @@ const projects = [
     images: ["/project-image3.png"],
   },
   {
+    title: "DonaChain (a Platform Donation Web3 run on Base L2 EVM Blockchain made for creators)",
+    type: "Projek Individu",
+    duration: "Mar 2025 - May 2025",
+    description: [
+      "Built with Next.js 15 & TypeScript",
+      "Web3 Integration with Wagmi.",
+      "Smart Contract Integration(Base L2 EVM Chain)",
+      "USDC Donation Support",
+      "Hardhat for Smart Contract Development & Testing",
+      "Creator Registration, Secure Wallet Integration and Real-time Balance Tracking",
+      "Donation shortlink with username.example: donachain.vercel.app/rhmtw",
+    ],
+    technologies: ["Node.js", "Smart Contract", "Solidity", "HardHat", "Wagmi", "Web3", "Blockchain", "Base L2 EVM Blockchain", "NextJS"],
+    link: "https://github.com/rahmate2003/",
+    images: ["/a.png", "b.png", "c.png", "d.png", "e.png"],
+  },
+  {
     title: "Frontend dan Backend REST API untuk Pelacakan Kendaraan berbasis IoT ",
     type: "Projek Kolaborasi",
     duration: "Mar 2025 - May 2025",
