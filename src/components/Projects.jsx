@@ -34,7 +34,7 @@ const projects = [
       "Donation shortlink with username.example: donachain.vercel.app/rhmtw",
     ],
     technologies: ["Node.js", "Smart Contract", "Solidity", "HardHat", "Wagmi", "Web3", "Blockchain", "Base L2 EVM Blockchain", "NextJS"],
-    link: "https://github.com/rahmate2003/",
+    link: "https://github.com/rahmate2003/donachain",
     images: ["/a.png", "b.png", "c.png", "d.png", "e.png"],
   },
   {
