@@ -7,7 +7,7 @@ import './index.css'
 import { Analytics } from "@vercel/analytics/next"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
     <Analytics />
+    <App />
   </React.StrictMode>,
 )
