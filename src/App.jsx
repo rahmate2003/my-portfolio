@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="bg-gray-50 relative">
+      <Analytics />
       <Navbar />
       <main>
         <Hero />
@@ -43,7 +44,6 @@ function App() {
         <Certification />
         <Skills />
         <Contact />
-        <Analytics />
       </main>
       <Footer />
 
