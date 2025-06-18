@@ -10,7 +10,7 @@ import Certification from "./components/Certifications"
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
+import { Analytics } from "@vercel/analytics/next"
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
@@ -43,6 +43,7 @@ function App() {
         <Certification />
         <Skills />
         <Contact />
+        <Analytics />
       </main>
       <Footer />
 
