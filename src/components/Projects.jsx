@@ -41,7 +41,7 @@ const projects = [
   {
     title: "Frontend dan Backend REST API untuk Pelacakan Kendaraan berbasis IoT ",
     type: "Projek Kolaborasi",
-    duration: "Mar 2025 - May 2025",
+    duration: "Mar 2025 - April 2025",
     description: [
       "Merancang dan membangun database menggunakan MongoDB dengan Role Based Access Control (RBAC).",
       "Membangun REST API untuk mengelola data perangkat, pengguna, dan pelacakan kendaraan menggunakan modul GPS.",
