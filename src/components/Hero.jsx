@@ -20,7 +20,7 @@ export default function Hero() {
                     <div className="mb-8 relative inline-block">
                         <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl mx-auto transform transition duration-500 hover:scale-105">
                             <img
-                                src="/profile.jpg" // Tambahkan foto profil ke folder public
+                                src="/pasfoto.jpg" // Tambahkan foto profil ke folder public
                                 alt="Rahmat Wahyudi"
                                 className="w-full h-full object-cover"
                             />
