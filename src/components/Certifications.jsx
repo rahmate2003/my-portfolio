@@ -20,6 +20,14 @@ const certifications = [
         image: "/cert11.jpg",
     },
     {
+        title: "Coursera - Technical Support Fundamentals",
+        image: "/cert13.jpg",
+    },
+    {
+        title: "Coursera - Bits and Bytes of Computer Networking",
+        image: "/cert12.jpg",
+    },
+    {
         title: "Dicoding - Belajar dasar AI",
         image: "/cert2.jpg",
     },
