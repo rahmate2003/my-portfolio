@@ -8,6 +8,18 @@ const certifications = [
         image: "/cert10.jpg",
     },
     {
+        title: "CCNA - ENSA",
+        image: "/cert8.jpg",
+    },
+    {
+        title: "CCNA - SRWE",
+        image: "/cert9.jpg",
+    },
+    {
+        title: "CCNA - IT ESSENTIALS",
+        image: "/cert11.jpg",
+    },
+    {
         title: "Dicoding - Belajar dasar AI",
         image: "/cert2.jpg",
     },
@@ -30,14 +42,6 @@ const certifications = [
     {
         title: "Dicoding - Menjadi Google Cloud Engineer",
         image: "/cert7.jpg",
-    },
-    {
-        title: "CCNA - ENSA",
-        image: "/cert8.jpg",
-    },
-    {
-        title: "CCNA - SRWE",
-        image: "/cert9.jpg",
     },
 ];
 
