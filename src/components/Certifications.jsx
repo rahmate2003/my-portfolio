@@ -4,6 +4,10 @@ const certifications = [
         image: "/cert1.jpg",
     },
     {
+        title: "MSIB Kampus Merdeka - Studi Independen",
+        image: "/cert10.jpg",
+    },
+    {
         title: "Dicoding - Belajar dasar AI",
         image: "/cert2.jpg",
     },
