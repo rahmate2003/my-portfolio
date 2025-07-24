@@ -6,7 +6,7 @@
 const projects = [
   {
     title: "Website Jurusan dan Prodi Teknologi Informasi Politeknik Negeri Samarinda",
-    type: "Projek Individu",
+    type: "Projek Kolaborasi",
     duration: "Juni 2025 - Juli 2025",
     description: [
       "Membuat Website menggunakan NextJS",
@@ -147,6 +147,19 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
+                    {/* Tombol Link Proyek */}
+                    {project.link && (
+                      <div className="mt-6">
+                        <a
+                          href={project.link.startsWith('http') ? project.link : `https://${project.link}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200"
+                        >
+                          Lihat Proyek
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
