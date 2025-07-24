@@ -5,6 +5,18 @@
 
 const projects = [
   {
+    title: "Website Jurusan dan Prodi Teknologi Informasi Politeknik Negeri Samarinda",
+    type: "Projek Individu",
+    duration: "Juni 2025 - Juli 2025",
+    description: [
+      "Membuat Website menggunakan NextJS",
+      "Membuat Tampilan Modern dengan menerapkan standar Responsive dan Animasi yang menarik",
+    ],
+    technologies: ["Node.js", "NextJS"],
+    link: "trk.polnes.ac.id",
+    images: ["/5.png"],
+  },
+  {
     title: "DonaChain (a Platform Donation Web3 run on Base L2 EVM Blockchain made for creators)",
     type: "Projek Individu",
     duration: "Juni 2025 - Juni 2025",
