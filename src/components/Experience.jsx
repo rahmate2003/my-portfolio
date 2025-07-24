@@ -3,7 +3,7 @@ const experiences = [
   {
     company: "PT. Eramart at Head Office Lembuswana Samarinda",
     position: "Staff IT",
-    duration: "Jun 2025 - May 2025",
+    duration: "Jun 2025 - Present",
     description: [
       "Instalasi, Repair, Troubleshooting Hardware (PC) dan Software POS Eramart untuk Head Office dan 84 Toko (Windows/Linux)",
       "Instalasi, Repair, Troubleshooting Jaringan Komputer (Router, Switch, Access Point) untuk Head Office dan 84 Toko.",
