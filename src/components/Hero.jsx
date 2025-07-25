@@ -36,8 +36,8 @@ export default function Hero() {
                     <div className="h-1 w-20 bg-indigo-500 mx-auto mb-6"></div>
                     <p className="text-lg md:text-xl text-gray-200 mb-8">
                         <span className="typing-text delay-100">Backend Developer</span> |
-                        <span className="typing-text delay-600"> Cloud Engineer</span> |
-                        <span className="typing-text delay-900"> Network Engineer</span>
+                        <span className="typing-text delay-600"> Cloud Computing</span> |
+                        <span className="typing-text delay-900"> Network</span>
                     </p>
                     <div className="mt-4 flex justify-center space-x-6 mb-8">
                         <a href="https://github.com/rahmate2003" target="_blank" rel="noopener noreferrer" className="group text-sm font-semibold text-white transition-all duration-300 hover:text-indigo-400">
