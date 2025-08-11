@@ -5,6 +5,7 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
 
     const navigation = [
+        { name: 'Beranda', href: '#beranda' },
         { name: 'Tentang', href: '#about' },
         { name: 'Pendidikan', href: '#education' },
         { name: 'Pengalaman', href: '#experience' },

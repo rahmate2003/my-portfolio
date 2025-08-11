@@ -59,7 +59,7 @@ export default function Skills() {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
-              <span className="bg-gradient-to-r from-yellow-600 via-yellow-300 to-amber-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Hard Skills
               </span>
             </h2>

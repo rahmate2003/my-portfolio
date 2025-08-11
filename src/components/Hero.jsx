@@ -1,6 +1,7 @@
 export default function Hero() {
     return (
-        <div className="relative min-h-screen flex items-center justify-center">
+        
+        <div id="beranda" className="relative min-h-screen flex items-center justify-center">
             {/* Background dengan overlay gradient */}
             <div
                 className="absolute inset-0 z-0"
