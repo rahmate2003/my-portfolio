@@ -5,7 +5,7 @@ const experiences = [
     position: "Staff IT",
     duration: "Jun 2025 - Present",
     description: [
-      "Menganalisis dan memetakan alur proses bisnis ERP (Buyer, Accounting, POS dll) dari sistem yang ditawarkan oleh vendor baru.",
+      // "Menganalisis dan memetakan alur proses bisnis ERP (Buyer, Accounting, POS dll) dari sistem yang ditawarkan oleh vendor baru.",
       "Melakukan evaluasi terhadap kesesuaian sistem ERP baru (Buyer, Accounting, POS dll) dengan kebutuhan operasional Eramart.",
       "Bekerja sama dengan vendor dalam implementasi dan pengujian sistem keamanan, blackbox & smoke testing untuk memastikan integrasi yang optimal dengan proses internal perusahaan sebelumnya.",
       "Instalasi, Repair, Troubleshooting Hardware (PC) dan Software POS Eramart untuk Head Office dan 84 Toko (Windows/Linux)",
