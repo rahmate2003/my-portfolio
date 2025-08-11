@@ -24,31 +24,40 @@ export default function Education() {
     return (
         <section id="education" className="py-24 bg-gray-50 animate-slide-in-left">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:max-w-4xl">
+                <div className="mx-auto max-w-7xl lg:max-w-7xl">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
                         <span className="typing-text">Pendidikan</span>
                     </h2>
-                    <div className="mt-16 space-y-10">
+                    <div className="mt-16 space-y-12">
                         {education.map((edu, index) => (
                             <div key={index} className="relative animate-slide-in-up">
-                                <div className="relative">
-                                    {/* Company */}
-                                    <h3 className="text-xl font-semibold text-indigo-600">
+                                <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                    {/* Institution Name */}
+                                    <h3 className="text-xl font-semibold text-indigo-600 mb-2">
                                         <span className="typing-text">{edu.position}</span>
                                     </h3>
 
-                                    {/* Company */}
-                                    <span className="typing-text text-lg font-medium text-gray-800 italic">{edu.company}</span>
+                                    {/* School Name */}
+                                    <p className="text-lg font-medium text-gray-800 mb-3">
+                                        <span className="typing-text">{edu.company}</span>
+                                    </p>
 
-                                    {/* Duration */}
-                                    <br></br>
-                                    <span className="typing-text mt-1 text-sm text-gray-500">{edu.duration}</span>
+                                    {/* Duration and GPA Container */}
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
+                                        <span className="text-sm text-gray-500 font-medium">
+                                            <span className="typing-text">📅 {edu.duration}</span>
+                                        </span>
+                                        <span className="text-sm text-indigo-600 font-semibold bg-indigo-50 px-3 py-1 rounded-full">
+                                            <span className="typing-text">🏆 {edu.gpa}</span>
+                                        </span>
+                                    </div>
 
-                                    <br></br>                                    {/* GPA */}
-                                    <span className="typing-text mt-1 text-sm text-gray-500">{edu.gpa}</span>
-                                    <br></br>
                                     {/* Description */}
-                                    <span className="mt-4 text-gray-700 typing-text max-w-prose mx-auto">{edu.description}</span>
+                                    <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+                                        <p className="text-gray-700 leading-relaxed text-justify">
+                                            <span className="typing-text">{edu.description}</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         ))}

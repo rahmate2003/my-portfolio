@@ -95,76 +95,159 @@ const projects = [
   },
 ];
 export default function Projects() {
+  const getProjectIcon = (type) => {
+    switch (type) {
+      case 'Projek Kolaborasi': return '🤝';
+      case 'Projek Individu': return '👤';
+      case 'Skripsi': return '🎓';
+      case 'Capstone Proyek Akhir Bangkit Academy': return '🚀';
+      default: return '💼';
+    }
+  };
+
+  const getProjectColor = (index) => {
+    const colors = [
+      'from-blue-500 to-indigo-500',
+      'from-purple-500 to-pink-500',
+      'from-green-500 to-teal-500',
+      'from-orange-500 to-red-500',
+      'from-indigo-500 to-purple-500',
+      'from-teal-500 to-cyan-500'
+    ];
+    return colors[index % colors.length];
+  };
+
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-24 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Projek</h2>
-          <div className="mt-16 space-y-20">
+        <div className="mx-auto max-w-6xl">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
+              <span className="bg-gradient-to-r from-slate-600 via-gray-700 to-zinc-800 bg-clip-text text-transparent">
+                Portfolio Projek
+              </span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-gray-600 mx-auto rounded-full"></div>
+            <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+              Kumpulan projek yang telah saya kerjakan, mulai dari pengembangan web, blockchain, hingga sistem IoT
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="space-y-16">
             {projects.map((project, index) => (
-              <div key={index} className="relative">
-                <div className="group relative">
-                  {/* Flex container untuk gambar dengan lebar penuh */}
-                  <div className="flex flex-wrap gap-2 mb-2">
+              <div 
+                key={index} 
+                className="group bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                {/* Project Images */}
+                <div className="relative overflow-hidden">
+                  <div className="flex flex-wrap gap-0">
                     {project.images.map((image, idx) => (
                       <div
                         key={idx}
-                        className={`${project.images.length === 1 ? "w-full" : "w-[280px]"
-                          }`}
+                        className={`${
+                          project.images.length === 1 
+                            ? "w-full h-80" 
+                            : project.images.length <= 2
+                            ? "w-1/2 h-64"
+                            : "w-1/3 h-48"
+                        } relative overflow-hidden group-hover:scale-105 transition-transform duration-500`}
                       >
                         <img
                           src={image || "/placeholder-image.jpg"}
-                          alt={`${project.title} image ${idx + 1}`}
-                          className="object-cover object-center w-full h-full rounded-lg"
+                          alt={`${project.title} screenshot ${idx + 1}`}
+                          className="object-cover object-center w-full h-full"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     ))}
                   </div>
+                  
+                  {/* Project Type Badge */}
+                  <div className="absolute top-4 left-4">
+                    <span className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold text-white bg-gradient-to-r ${getProjectColor(index)} shadow-lg`}>
+                      <span className="mr-2">{getProjectIcon(project.type)}</span>
+                      {project.type}
+                    </span>
+                  </div>
+                </div>
 
-                  <div className="mt-4">
-                    <h3 className="text-xl font-semibold text-blue-800">
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        {project.title}
-                      </a>
+                {/* Project Content */}
+                <div className="p-8">
+                  {/* Project Header */}
+                  <div className="mb-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors duration-300">
+                      {project.title}
                     </h3>
-                    <span className="text-lg font-medium text-gray-800 italic">{project.type}</span>
-                    <br />
-                    <span className="text-sm text-gray-600">{project.duration}</span>
-                    <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700">
+                    <div className="flex items-center text-sm text-gray-500 mb-4">
+                      <span className="mr-4">📅 {project.duration}</span>
+                    </div>
+                  </div>
+
+                  {/* Project Description */}
+                  <div className="mb-6">
+                    <div className="space-y-3">
                       {project.description.map((item, idx) => (
-                        <li key={idx} className="text-base text-gray-600">
-                          {item}
-                        </li>
+                        <div key={idx} className="flex items-start">
+                          <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                            <span className="text-white text-xs font-bold">✓</span>
+                          </div>
+                          <p className="text-gray-700 font-medium leading-relaxed">
+                            {item}
+                          </p>
+                        </div>
                       ))}
-                    </ul>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-8">
+                    <h4 className="text-sm font-semibold text-gray-900 mb-3 flex items-center">
+                      <span className="mr-2">🛠️</span>
+                      Teknologi yang Digunakan
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded"
+                          className="inline-flex items-center px-3 py-1.5 text-xs font-medium bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 rounded-full hover:from-indigo-100 hover:to-purple-100 hover:text-indigo-800 transition-all duration-300 cursor-default"
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
-                    {/* Tombol Link Proyek */}
-                    {project.link && (
-                      <div className="mt-6">
-                        <a
-                          href={project.link.startsWith('http') ? project.link : `https://${project.link}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200"
-                        >
-                          Lihat Proyek
-                        </a>
-                      </div>
-                    )}
                   </div>
+
+                  {/* Project Link */}
+                  {project.link && (
+                    <div className="flex items-center justify-between pt-6 border-t border-gray-100">
+                      <div className="flex items-center text-sm text-gray-500">
+                        <span className="mr-2">🔗</span>
+                        <span>Lihat detail projek</span>
+                      </div>
+                      <a
+                        href={project.link.startsWith('http') ? project.link : `https://${project.link}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center px-6 py-3 bg-gradient-to-r ${getProjectColor(index)} text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300`}
+                      >
+                        <span className="mr-2">🚀</span>
+                        Lihat Projek
+                        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
           </div>
+
+        
         </div>
       </div>
     </section>

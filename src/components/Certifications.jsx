@@ -54,29 +54,110 @@ const certifications = [
 ];
 
 export default function Certification() {
+    const getCertificationProvider = (title) => {
+        if (title.includes('Bangkit Academy')) return { icon: '🚀', color: 'from-blue-500 to-indigo-600' };
+        if (title.includes('CCNA')) return { icon: '🌐', color: 'from-green-500 to-teal-600' };
+        if (title.includes('Coursera')) return { icon: '🎓', color: 'from-purple-500 to-pink-600' };
+        if (title.includes('Dicoding')) return { icon: '💻', color: 'from-orange-500 to-red-600' };
+        if (title.includes('MSIB')) return { icon: '🏆', color: 'from-indigo-500 to-purple-600' };
+        return { icon: '📜', color: 'from-gray-500 to-slate-600' };
+    };
+
+    const getProviderStats = () => {
+        const providers = {
+            'Dicoding': certifications.filter(cert => cert.title.includes('Dicoding')).length,
+            'CCNA': certifications.filter(cert => cert.title.includes('CCNA')).length,
+            'Coursera': certifications.filter(cert => cert.title.includes('Coursera')).length,
+            'Bangkit Academy': certifications.filter(cert => cert.title.includes('Bangkit Academy')).length,
+            'MSIB': certifications.filter(cert => cert.title.includes('MSIB')).length
+        };
+        return providers;
+    };
+
     return (
-        <section id="certifications" className="py-24 bg-white animate-slide-in-left">
+        <section id="certifications" className="py-24 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-                    Sertifikat
-                </h2>
-                <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {certifications.map((cert, index) => (
-                        <div
-                            key={index}
-                            className="relative group rounded-lg shadow-md overflow-hidden bg-gray-100 hover:shadow-lg transition-shadow"
-                        >
-                            <img
-                                src={cert.image}
-                                alt={cert.title}
-                                className="w-full h-56 object-cover object-center"
-                            />
-                            <div className="p-4 text-center">
-                                <h3 className="text-sm font-medium text-gray-900">{cert.title}</h3>
-                            </div>
-                        </div>
-                    ))}
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
+                        <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                            Sertifikat & Pencapaian
+                        </span>
+                    </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                    <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+                        Koleksi sertifikat profesional yang menunjukkan komitmen terhadap pembelajaran berkelanjutan dan pengembangan keahlian
+                    </p>
                 </div>
+
+                {/* Certifications Grid */}
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-16">
+                    {certifications.map((cert, index) => {
+                        const provider = getCertificationProvider(cert.title);
+                        return (
+                            <div
+                                key={index}
+                                className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:rotate-1"
+                                style={{ animationDelay: `${index * 100}ms` }}
+                            >
+                                {/* Certificate Image */}
+                                <div className="relative overflow-hidden">
+                                    <img
+                                        src={cert.image}
+                                        alt={cert.title}
+                                        className="w-full h-48 object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    
+                                    {/* Provider Badge */}
+                                    <div className="absolute top-3 right-3">
+                                        <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold text-white bg-gradient-to-r ${provider.color} shadow-lg`}>
+                                            <span className="mr-1">{provider.icon}</span>
+                                            Verified
+                                        </span>
+                                    </div>
+
+                                    {/* Hover Overlay */}
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                                            <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Certificate Content */}
+                                <div className="p-6">
+                                    <div className="flex items-start justify-between mb-3">
+                                        <div className="flex-1">
+                                            <h3 className="text-sm font-bold text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors duration-300">
+                                                {cert.title}
+                                            </h3>
+                                        </div>
+                                        <div className="ml-2 flex-shrink-0">
+                                            <span className="text-2xl">{provider.icon}</span>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Certificate Status */}
+                                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                                        <div className="flex items-center text-xs text-gray-500">
+                                            <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                                            <span>Tersertifikasi</span>
+                                        </div>
+                                        <div className="text-xs text-gray-400">
+                                            #{String(index + 1).padStart(2, '0')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                
             </div>
         </section>
     );
