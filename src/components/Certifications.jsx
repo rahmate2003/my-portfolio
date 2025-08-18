@@ -53,7 +53,11 @@ const certifications = [
     },
 ];
 
+import { useState } from 'react';
+
 export default function Certification() {
+    const [selectedImage, setSelectedImage] = useState(null);
+
     const getCertificationProvider = (title) => {
         if (title.includes('Bangkit Academy')) return { icon: '🚀', color: 'from-blue-500 to-indigo-600' };
         if (title.includes('CCNA')) return { icon: '🌐', color: 'from-green-500 to-teal-600' };
@@ -105,10 +109,11 @@ export default function Certification() {
                                     <img
                                         src={cert.image}
                                         alt={cert.title}
-                                        className="w-full h-48 object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                                        className="w-full h-48 object-cover object-center group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                                        onClick={() => setSelectedImage(cert.image)}
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    
+
                                     {/* Provider Badge */}
                                     <div className="absolute top-3 right-3">
                                         <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold text-white bg-gradient-to-r ${provider.color} shadow-lg`}>
@@ -118,8 +123,20 @@ export default function Certification() {
                                     </div>
 
                                     {/* Hover Overlay */}
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300" onClick={(e) => {
+                                        e.stopPropagation();
+                                        setSelectedImage(cert.image);
+                                    }}
+                                    >
+
+
+                                        <div
+                                            className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300 cursor-pointer"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setSelectedImage(cert.image);
+                                            }}
+                                        >
                                             <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -140,7 +157,7 @@ export default function Certification() {
                                             <span className="text-2xl">{provider.icon}</span>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Certificate Status */}
                                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                                         <div className="flex items-center text-xs text-gray-500">
@@ -157,8 +174,51 @@ export default function Certification() {
                     })}
                 </div>
 
-                
+                {/* Provider Statistics */}
+                <div className="max-w-3xl mx-auto">
+                    <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center">Statistik Sertifikasi</h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            {Object.entries(getProviderStats()).map(([provider, count]) => (
+                                <div key={provider} className="text-center">
+                                    <div className="text-2xl mb-1">
+                                        {getCertificationProvider(provider).icon}
+                                    </div>
+                                    <div className="text-sm font-medium text-gray-900">{provider}</div>
+                                    <div className="text-lg font-bold text-indigo-600">{count}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            {/* Image Modal */}
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-90"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div
+                        className="relative max-w-4xl w-full"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            onClick={() => setSelectedImage(null)}
+                            className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200"
+                        >
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <img
+                            src={selectedImage}
+                            alt="Certificate Preview"
+                            className="w-full h-auto rounded-lg shadow-2xl transform transition-transform duration-300 hover:scale-105"
+                        />
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
