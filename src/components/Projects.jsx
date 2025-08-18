@@ -5,6 +5,19 @@
 
 const projects = [
   {
+    title: "Website Company Profile PT. Daniswara Berkah Perkasa",
+    type: "Projek Kolaborasi",
+    duration: "Agustus 2025 - Agustus 2025",
+    description: [
+      "Membuat Website Dinamis menggunakan Laravel Filament dan MySQL",
+      "Membuat Tampilan Modern dengan menerapkan standar Responsive dan Animasi yang menarik",
+      "Membuat CMS (Content Management System) untuk Blog, Rental Alat Berat, dan Safety Device",
+    ],
+    technologies: ["Laravel", "Filament", "MYSQL"],
+    link: "daniwaraberkahperkasa.com",
+    images: ["/6.png"],
+  },
+  {
     title: "Website Jurusan dan Prodi Teknologi Informasi Politeknik Negeri Samarinda",
     type: "Projek Kolaborasi",
     duration: "Juni 2025 - Juli 2025",
@@ -137,8 +150,8 @@ export default function Projects() {
           {/* Projects Grid */}
           <div className="space-y-16">
             {projects.map((project, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="group bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
@@ -148,13 +161,12 @@ export default function Projects() {
                     {project.images.map((image, idx) => (
                       <div
                         key={idx}
-                        className={`${
-                          project.images.length === 1 
-                            ? "w-full h-80" 
-                            : project.images.length <= 2
+                        className={`${project.images.length === 1
+                          ? "w-full h-80"
+                          : project.images.length <= 2
                             ? "w-1/2 h-64"
                             : "w-1/3 h-48"
-                        } relative overflow-hidden group-hover:scale-105 transition-transform duration-500`}
+                          } relative overflow-hidden group-hover:scale-105 transition-transform duration-500`}
                       >
                         <img
                           src={image || "/placeholder-image.jpg"}
@@ -165,7 +177,7 @@ export default function Projects() {
                       </div>
                     ))}
                   </div>
-                  
+
                   {/* Project Type Badge */}
                   <div className="absolute top-4 left-4">
                     <span className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold text-white bg-gradient-to-r ${getProjectColor(index)} shadow-lg`}>
@@ -247,7 +259,7 @@ export default function Projects() {
             ))}
           </div>
 
-        
+
         </div>
       </div>
     </section>
