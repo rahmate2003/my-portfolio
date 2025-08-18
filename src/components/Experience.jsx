@@ -6,7 +6,7 @@ const experiences = [
     duration: "Jun 2025 - Present",
     description: [
       // "Menganalisis dan memetakan alur proses bisnis ERP (Buyer, Accounting, POS dll) dari sistem yang ditawarkan oleh vendor baru.",
-      "Melakukan evaluasi terhadap kesesuaian sistem ERP baru (Buyer, Accounting, POS dll) dengan kebutuhan operasional Eramart.",
+      "Melakukan evaluasi terhadap kesesuaian sistem ERP baru (Purchasing, Accounting, POS dll) dengan kebutuhan operasional Eramart.",
       "Bekerja sama dengan vendor dalam implementasi dan pengujian sistem keamanan, blackbox & smoke testing untuk memastikan integrasi yang optimal dengan proses internal perusahaan sebelumnya.",
       "Instalasi, Repair, Troubleshooting Hardware (PC) dan Software POS Eramart untuk Head Office dan 84 Toko (Windows/Linux)",
       "Instalasi, Repair, Troubleshooting Jaringan Komputer (Router, Switch, Access Point) untuk Head Office dan 84 Toko.",
@@ -79,13 +79,13 @@ export default function Experience() {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 hidden md:block"></div>
-            
+
             <div className="space-y-12">
               {experiences.map((experience, index) => (
                 <div key={index} className="relative animate-slide-in-up" style={{ animationDelay: `${index * 200}ms` }}>
                   {/* Timeline Dot */}
                   <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full border-4 border-white shadow-lg hidden md:block"></div>
-                  
+
                   {/* Experience Card */}
                   <div className="md:ml-20 bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                     {/* Header */}
@@ -174,7 +174,7 @@ export default function Experience() {
             </div>
           </div>
 
-         
+
         </div>
       </div>
     </section>
