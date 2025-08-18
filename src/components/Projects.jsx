@@ -14,7 +14,7 @@ const projects = [
       "Membuat CMS (Content Management System) untuk Blog, Rental Alat Berat, dan Safety Device",
     ],
     technologies: ["Laravel", "Filament", "MYSQL"],
-    link: "daniwaraberkahperkasa.com",
+    link: "daniswaraberkahperkasa.com",
     images: ["/6.png"],
   },
   {
