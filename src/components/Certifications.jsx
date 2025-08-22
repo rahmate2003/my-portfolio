@@ -20,6 +20,10 @@ const certifications = [
         image: "/cert11.jpg",
     },
     {
+        title: "TOEFL - Prediction Test (477)",
+        image: "/toefl_1.png",
+    },
+    {
         title: "Coursera - Technical Support Fundamentals",
         image: "/cert13.jpg",
     },
