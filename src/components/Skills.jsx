@@ -10,7 +10,7 @@ const skills = {
     "Google Cloud Workspace (Docs, Spreadsheet, Slide)",
   ],
   "Jaringan Komputer (Network)": [
-    "Mikrotik, TCP/IP, routing, switching, LAN/VLAN, firewall",
+    "Mikrotik, TCP/IP, routing, switching, LAN",
     "Instalasi jaringan komputer, crimping RJ-45, konfigurasi IP",
     "Setting router/access point, pengujian jaringan",
   ],
@@ -72,8 +72,8 @@ export default function Skills() {
           {/* Skills Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Object.entries(skills).map(([category, items], categoryIndex) => (
-              <div 
-                key={category} 
+              <div
+                key={category}
                 className="group bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
                 style={{ animationDelay: `${categoryIndex * 100}ms` }}
               >
@@ -90,8 +90,8 @@ export default function Skills() {
                 {/* Skills List */}
                 <div className="space-y-3">
                   {items.map((skill, index) => (
-                    <div 
-                      key={index} 
+                    <div
+                      key={index}
                       className="flex items-start p-3 bg-gray-50/50 rounded-xl hover:bg-indigo-50/50 transition-all duration-300 group-hover:translate-x-1"
                     >
                       <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
