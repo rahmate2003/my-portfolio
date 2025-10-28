@@ -148,55 +148,7 @@ export default function Experience() {
                       ))}
                     </div>
 
-                    {/* Skills Tags */}
-                    <div className="mt-6 pt-6 border-t border-gray-100">
-                      <div className="flex flex-wrap gap-2">
-                        {/* Dynamic skill tags based on experience */}
-                        {index === 0 && (
-                          <>
-                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Hardware</span>
-                            <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Networking</span>
-                            <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Software</span>
-                            <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">ERP</span>
-                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">CCTV</span>
-                          </>
-                        )}
-                        {index === 1 && (
-                          <>
-                            <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Node.js</span>
-                            <span className="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">Redis</span>
-                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">REST API</span>
-                          </>
-                        )}
-                        {index === 2 && (
-                          <>
-                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Google Cloud</span>
-                            <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Backend</span>
-                          </>
-                        )}
-                        {index === 3 && (
-                          <>
-                            <span className="px-3 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded-full">IT Support</span>
-                            <span className="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Accounting</span>
-                          </>
-                        )}
-                        {index === 4 && (
-                          <>
-                            <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">Freelance</span>
-                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">PC Assembly</span>
-                          </>
-                        )}
-                        {index === 5 && (
-                          <>
-                            <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Fiber Optik</span>
-                            <span className="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">Mikrotik</span>
-                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">LAN</span>
-                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">WAN</span>
-                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CCTV</span>
-                          </>
-                        )}
-                      </div>
-                    </div>
+                    {/* Skills tags removed */}
                   </div>
                 </div>
               ))}
