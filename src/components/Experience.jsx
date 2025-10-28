@@ -1,9 +1,21 @@
 const experiences = [
-
   {
-    company: "PT. Eramart at Head Office Lembuswana Samarinda",
+    company: "PT. Xapiens Teknologi Indonesia at PT. Kideco Jaya Agung Jobsite",
+    position: "IT Support",
+    duration: "Sep 2025 - Present",
+    location: "Batu Kajang, Paser, Kalimantan Timur",
+    description: [
+      "Instalasi dan pemeliharaan jaringan Fiber Optik untuk mendukung konektivitas perusahaan.",
+      "Konfigurasi dan manajemen perangkat jaringan Mikrotik untuk LAN dan WAN.",
+      "Troubleshooting jaringan komputer untuk memastikan kelancaran operasional.",
+      "Instalasi dan pemeliharaan sistem CCTV",
+    ],
+  },
+  {
+    company: "PT. Eramart at Head Office Lembuswana",
     position: "Staff IT",
-    duration: "Jun 2025 - Present",
+    duration: "Jun 2025 - Agustus 2025",
+    location: "Kota Samarinda, Kalimantan Timur",
     description: [
       // "Menganalisis dan memetakan alur proses bisnis ERP (Buyer, Accounting, POS dll) dari sistem yang ditawarkan oleh vendor baru.",
       "Melakukan evaluasi terhadap kesesuaian sistem ERP baru (Purchasing, Accounting, POS dll) dengan kebutuhan operasional Eramart.",
@@ -17,6 +29,7 @@ const experiences = [
     company: "PT. Media Kreasi Abadi",
     position: "Backend Web Developer (Magang)",
     duration: "Mar 2025 - May 2025",
+    location: "Kota Balikpapan, Kalimantan Timur",
     description: [
       "Merancang dan Membangun database dan backend REST API platform prototipe ERP NukaPOS menggunakan Node.js dan Redis.",
       "Mengembangkan dan mengintegrasikan REST API untuk sistem manajemen inventaris, penjualan, dan laporan.",
@@ -31,6 +44,7 @@ const experiences = [
     company: "Bangkit Academy by Google, GoTo, Traveloka",
     position: "Cloud Computing (MSIB)",
     duration: "Feb 2024 - Jul 2024",
+    location: "Remote",
     description: [
       "Melakukan penerapan Google Cloud Platform (GCP) untuk virtualisasi, auto-scaling, dan manajemen backend.",
       "Mengembangkan backend aplikasi proyek akhir CalorieWise untuk pelacakan nutrisi dan data makanan beserta kandungannya.",
@@ -41,6 +55,7 @@ const experiences = [
     company: "Bendahara Kantor Kesyahbandaran dan Otoritas Pelabuhan Samarinda",
     position: "IT Support & Akuntan (Magang)",
     duration: "Jun 2019 - Dec 2019",
+    location: "Kota Samarinda, Kalimantan Timur",
     description: [
       "Troubleshooting infrastruktur IT terkait masalah perangkat keras, perangkat lunak & jaringan komputer pegawai.",
       "Menginput, menyusun dan merekap pembayaran PNBP (Penerimaan Negara Bukan Pajak) terkait pelayanan kapal melalui sistem SIMLALA.",
@@ -50,11 +65,13 @@ const experiences = [
   {
     company: "Freelance",
     position: "Instalasi, Troubleshooting Software & Perakitan Komputer",
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 - Agustus 2025",
+    location: "Kota Samarinda, Kalimantan Timur",
     description: [
       "Instalasi, Troubleshooting sistem operasi Windows/Linux dan mengkonfigurasi perangkat keras untuk 20+ pelanggan",
     ],
   },
+
 ]
 
 export default function Experience() {
@@ -96,6 +113,9 @@ export default function Experience() {
                         </h3>
                         <p className="text-lg font-semibold text-indigo-600 mb-2">
                           <span className="typing-text">{experience.company}</span>
+                        </p>
+                        <p className="text-sm text-gray-500 mb-2">
+                          <span className="typing-text">📍 {experience.location}</span>
                         </p>
                       </div>
                       <div className="flex items-center mt-4 lg:mt-0">
@@ -164,6 +184,15 @@ export default function Experience() {
                           <>
                             <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">Freelance</span>
                             <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">PC Assembly</span>
+                          </>
+                        )}
+                        {index === 5 && (
+                          <>
+                            <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Fiber Optik</span>
+                            <span className="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">Mikrotik</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">LAN</span>
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">WAN</span>
+                            <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CCTV</span>
                           </>
                         )}
                       </div>
