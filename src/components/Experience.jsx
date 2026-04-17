@@ -1,6 +1,6 @@
 const experiences = [
   {
-    company: "PT. Xapiens Teknologi Indonesia (Member of Indika Energy) at PT. Kideco Jaya Agung Jobsite (Member of Indika Energy)",
+    company: "PT. Xapiens Teknologi Indonesia (Member of Indika Energy) at PT. Kideco Jaya Agung (Member of Indika Energy)",
     position: "IT Infrastructure (System Engineer and Data Center Operator)",
     duration: "Jan 2026 - Present",
     location: "Batu Kajang, Paser, Kalimantan Timur",
@@ -14,7 +14,7 @@ const experiences = [
     ],
   },
   {
-    company: "PT. Xapiens Teknologi Indonesia (Member of Indika Energy) at PT. Kideco Jaya Agung Jobsite (Member of Indika Energy)",
+    company: "PT. Xapiens Teknologi Indonesia (Member of Indika Energy) at PT. Kideco Jaya Agung (Member of Indika Energy)",
     position: "IT Support",
     duration: "Sep 2025 - Present",
     location: "Batu Kajang, Paser, Kalimantan Timur",
