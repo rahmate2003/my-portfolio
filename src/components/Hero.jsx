@@ -88,9 +88,10 @@ export default function Hero() {
             {/* Scroll indicator */}
             <div className="absolute bottom-5 left-1/2-1 transform -translate-x-1/2 text-center animate-bounce">
                 <a
-                    href="#about"
+                    href="#experience"
                     className="group text-sm font-semibold text-white transition-all duration-300 hover:text-indigo-400"
                 >
+                    Pengalaman Kerja
                     <svg
                         className="h-14 w-14 mx-auto"
                         fill="none"
