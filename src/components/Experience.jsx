@@ -1,6 +1,20 @@
 const experiences = [
   {
     company: "PT. Xapiens Teknologi Indonesia at PT. Kideco Jaya Agung Jobsite",
+    position: "IT Infrastructure (System Engineer and Data Center Operator)",
+    duration: "Jan 2026 - Present",
+    location: "Batu Kajang, Paser, Kalimantan Timur",
+    description: [
+      "Manajamen, Monitor dan Memelihara Server On Premis pada Data Center PT Kideco Jaya Agung.",
+      "Konfigurasi dan manajemen Microsoft 365 untuk produktivitas dan kolaborasi.",
+      "Pengelolaan Microsoft 365 Entra ID (Azure AD) untuk autentikasi dan otorisasi.",
+      "Administrasi Active Directory untuk manajemen domain dan pengguna.",
+      "Pengaturan dan pemeliharaan sistem backup untuk data perusahaan.",
+      "Pengelolaan virtualisasi VMware vCenter untuk manajemen infrastruktur virtual.",
+    ],
+  },
+  {
+    company: "PT. Xapiens Teknologi Indonesia at PT. Kideco Jaya Agung Jobsite",
     position: "IT Support",
     duration: "Sep 2025 - Present",
     location: "Batu Kajang, Paser, Kalimantan Timur",
